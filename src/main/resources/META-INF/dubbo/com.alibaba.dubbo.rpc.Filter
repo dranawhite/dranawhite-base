@@ -1,2 +1,2 @@
-dubboProviderLog=com.liumi.filter.DubboProviderLogFilter
-dubboConsumerLog=com.liumi.filter.DubboConsumerLogFilter
+dubboProviderLog=com.liumi.base.filter.DubboProviderLogFilter
+dubboConsumerLog=com.liumi.base.filter.DubboConsumerLogFilter

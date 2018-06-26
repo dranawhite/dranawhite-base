@@ -14,10 +14,10 @@ import org.springframework.stereotype.Component;
  */
 
 @Slf4j
-@Component
+@Component("exceptionAdvice")
 public class ExceptionAdvice {
 
-	private final String FAIL_CODE = "0000";
+	private final String FAIL_CODE = "2000";
 	private final String FAIL_DESC = "服务调用失败";
 
 	@SuppressWarnings("unchecked")

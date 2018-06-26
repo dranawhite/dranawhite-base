@@ -204,6 +204,11 @@
         <appender-ref ref = "ASYNC_FILE" />
         <appender-ref ref = "ASYNC_FILE_ERROR" />
     </logger>
+    <logger name = "com.kumi" level = "INFO" additivity = "false">
+        <appender-ref ref = "ASYNC_STDOUT" />
+        <appender-ref ref = "ASYNC_FILE" />
+        <appender-ref ref = "ASYNC_FILE_ERROR" />
+    </logger>
 
     <root level = "INFO">
         <appender-ref ref = "ASYNC_STDOUT" />
