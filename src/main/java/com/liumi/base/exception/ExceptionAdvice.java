@@ -9,6 +9,8 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.springframework.stereotype.Component;
 
 /**
+ * Dubbo统一异常处理
+ *
  * @author liangyq
  * @version [1.0, 2018/5/31 15:59]
  */

@@ -10,6 +10,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * DubboConsumer日志
+ *
  * @author liangyq
  * @version [1.0, 2018/6/12 18:03]
  */
