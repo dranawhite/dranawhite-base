@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DBgenerrator {
+public class DBgenerator {
 
 	public static void autoDB(String configFilePath) {
 		List<String> warnings = new ArrayList<>();
