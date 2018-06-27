@@ -1,0 +1,10 @@
+/*
+ * Copyright (C), ${fromYear}-${toYear}, ${company}
+ * FileName:     $!{fileName}
+ * Author:       $!{author} $!{email}
+ * Date:         $!{curTime}
+ * Description:  模块目的、功能描述
+ * History:      修改记录
+ *   <author>      <time>      <version>    <desc>
+ *   修改人姓名     修改时间     版本号        描述
+ */

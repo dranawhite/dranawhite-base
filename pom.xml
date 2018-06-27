@@ -40,6 +40,7 @@
         <mybatis-spring.version>1.3.1</mybatis-spring.version>
         <mybatis.version>3.4.5</mybatis.version>
         <druid.version>1.1.6</druid.version>
+        <velocity.version>1.7</velocity.version>
     </properties>
 
     <dependencyManagement>
@@ -117,6 +118,7 @@
             <artifactId>logback-ext-spring</artifactId>
             <version>${logback-spring.version}</version>
         </dependency>
+
         <!-- dubbo -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -177,6 +179,7 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Build -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -186,6 +189,18 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+        </dependency>
+
+        <!-- ORM -->
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>${mybatis-generator.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>${velocity.version}</version>
         </dependency>
     </dependencies>
 
