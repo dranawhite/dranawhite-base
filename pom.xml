@@ -4,9 +4,9 @@
          xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.liumi</groupId>
-    <artifactId>liumi-base</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>com.dranawhite</groupId>
+    <artifactId>dranawhite-base</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
 
     <!-- 公共属性 -->
     <properties>
@@ -17,12 +17,7 @@
         <!-- Validation -->
         <hibernate-validator.version>5.2.2.Final</hibernate-validator.version>
         <javax-validation.version>1.1.0.Final</javax-validation.version>
-        <!-- Apache Commons -->
-        <commons-lang.version>2.6</commons-lang.version>
-        <commons-collections.version>3.2.2</commons-collections.version>
         <!-- Web -->
-        <jsp.version>2.1</jsp.version>
-        <jstl.version>1.1.2</jstl.version>
         <fastjson.version>1.2.36</fastjson.version>
         <!-- Dubbo -->
         <dubbo.version>2.5.3</dubbo.version>
@@ -35,12 +30,18 @@
         <logback.version>1.2.3</logback.version>
         <logback-spring.version>0.1.5</logback-spring.version>
         <!-- Orm -->
-        <mysql.version>5.1.41</mysql.version>
         <mybatis-generator.version>1.3.5</mybatis-generator.version>
-        <mybatis-spring.version>1.3.1</mybatis-spring.version>
-        <mybatis.version>3.4.5</mybatis.version>
-        <druid.version>1.1.6</druid.version>
         <velocity.version>1.7</velocity.version>
+        <commons-lang3.version>3.7</commons-lang3.version>
+        <!-- 1.9.3版本，适用于JDK 1.5+ -->
+        <commons-beanutils.version>1.9.3</commons-beanutils.version>
+        <!-- 4.1版本，适用于JDK 1.6+ -->
+        <commons-collection4.version>4.1</commons-collection4.version>
+        <commons-codec.version>1.11</commons-codec.version>
+        <jug.version>3.1.5</jug.version>
+        <jota-time.version>2.7</jota-time.version>
+        <orika.version>1.5.2</orika.version>
+        <el.version>3.0.1-b08</el.version>
     </properties>
 
     <dependencyManagement>
@@ -155,15 +156,42 @@
         </dependency>
 
         <!-- commons -->
+        <!-- Apache Commons -->
+        <!-- Apache Commons Beanutils -->
         <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-            <version>${commons-lang.version}</version>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>${commons-beanutils.version}</version>
+        </dependency>
+        <!-- Apache Commons Lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
         </dependency>
         <dependency>
-            <groupId>commons-collections</groupId>
-            <artifactId>commons-collections</artifactId>
-            <version>${commons-collections.version}</version>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>${commons-codec.version}</version>
+        </dependency>
+        <!-- Apache Commons Collections4 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>${commons-collection4.version}</version>
+        </dependency>
+        <!-- UUID -->
+        <dependency>
+            <groupId>com.fasterxml.uuid</groupId>
+            <artifactId>java-uuid-generator</artifactId>
+            <version>${jug.version}</version>
+        </dependency>
+
+        <!-- Date Util -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${jota-time.version}</version>
         </dependency>
 
         <!-- Test -->
@@ -189,6 +217,11 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ma.glasnost.orika</groupId>
+            <artifactId>orika-core</artifactId>
+            <version>${orika.version}</version>
         </dependency>
 
         <!-- ORM -->
