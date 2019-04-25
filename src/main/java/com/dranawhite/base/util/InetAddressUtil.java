@@ -1,6 +1,6 @@
 package com.dranawhite.base.util;
 
-import com.dranawhite.exception.DranawhiteException;
+import com.dranawhite.base.exception.DranawhiteException;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;
